@@ -1,0 +1,40 @@
+.aboutMe {
+    display: flex;
+    margin-top: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.contact {
+    color: #4e1b6d;
+}
+
+.photo {
+    margin-right: 16px;
+}
+
+.describe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.describe > * { 
+    margin: 5px 
+}
+
+@media (min-width: 1500px) {
+    .aboutMe img {
+        max-height: 400px;
+        max-width: unset;
+    }
+
+    .describe {
+        font-size: 20px;
+    }
+}

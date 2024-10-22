@@ -1,0 +1,52 @@
+
+.navbar {
+    position: sticky;
+    top: 0;
+    padding: 0 200px;
+    background-color: #4e1b6d;
+}
+.navbar ul {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.navbar li {
+    flex:1;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.navbar li:hover {
+    background-color: #9248bf;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    0% { background-color: #4e1b6d;}
+    100% { background-color: #9248bf;}
+}
+
+.navbar li a {
+    padding:20px;
+    display: block;
+    
+}
+
+@media (max-width: 1320px) {
+    .navbar {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar li {
+        font-size: 14px;
+    }
+}
